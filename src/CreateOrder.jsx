@@ -41,20 +41,20 @@ function CreateOrder() {
     <div className="container">
       <form onSubmit={formik.handleSubmit}>
         <div className="row m-5">
-          <h1 className="mb-3 text-primary">Create Order</h1>
+          <h1 className="mb-5 ml-46 text-white">Create Order</h1>
           <div className="col-lg-12">
-            <label className="mb-2">Food Name</label>
+            <label className="mb-2 text-white">Food Name</label>
             <input
               name="name"
               value={formik.values.name}
               onChange={formik.handleChange}
               type="text"
-              className="form-control w-50"
+              className="form-control mb-3 w-50"
             />
             <span className="text-danger">{formik.errors.name}</span>
           </div>
           <div className="col-lg-12">
-            <label className="mb-2">Price</label>
+            <label className="mb-2 text-white">Price</label>
             <input
               type="number"
               name="price"

@@ -54,9 +54,9 @@ function EditOrder() {
     <div className="container">
       <form onSubmit={formik.handleSubmit}>
         <div className="row m-5">
-          <h1 className="text-primary mb-3">Edit Order</h1>
+          <h1 className="mb-5 ml-46 text-white">Edit Order</h1>
           <div className="col-lg-12">
-            <label className="mb-2">Food Name</label>
+            <label className="mb-2 text-white">Food Name</label>
             <input
               name="name"
               value={formik.values.name}
@@ -67,7 +67,7 @@ function EditOrder() {
             <span>{formik.errors.name}</span>
           </div>
           <div className="col-lg-12">
-            <label className="mb-2">Price</label>
+            <label className="mb-2 text-white mt-3">Price</label>
             <input
               type="number"
               name="price"

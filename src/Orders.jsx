@@ -25,28 +25,26 @@ function Orders() {
     }
   };
   return (
-    <div className="container">
+    <div className="container ">
       <div className="row m-5">
         <div className="col-lg-12">
-          <h1 className="text-primary">
-            CREATED ORDERS{"   "} <br />
-            <Link to={"/user-create"} className="btn btn-info">
-              Create Order
-            </Link>
-          </h1>
-          <table className="table table-striped table-hover">
-            <thead>
+          <h1 className="text-white justify-self-center">🍗FOOD 🍽RDERS</h1>
+          <Link to={"/user-create"} className="btn mb-3 btn-info">
+            ➕ Create Order
+          </Link>
+          <table className="table  border-2 table-striped table-hover">
+            <thead >
               <tr>
-                <th className="text-primary-emphasis" scope="col">
+                <th className="text-white bg-black " scope="col">
                   Item.No
                 </th>
-                <th className="text-primary-emphasis" scope="col">
+                <th className="text-white bg-black " scope="col">
                   ItemName
                 </th>
-                <th className="text-primary-emphasis" scope="col">
+                <th className="text-white bg-black " scope="col">
                   Price
                 </th>
-                <th className="text-primary-emphasis" scope="col">
+                <th className="text-white bg-black " scope="col">
                   Action
                 </th>
               </tr>
@@ -58,12 +56,15 @@ function Orders() {
                     <td>{index + 1}</td>
                     <td>{user.name}</td>
                     <td>{user.price}</td>
-                    <td >
+                    <td>
                       <Link to={`/user/${user._id}`} className="btn btn-info">
-                        View Order
+                        👁️ View Order
                       </Link>{" "}
-                      <Link to={`/edit/${user._id}`} className="btn btn-info ms-3">
-                        Edit Order
+                      <Link
+                        to={`/edit/${user._id}`}
+                        className="btn btn-info ms-3"
+                      >
+                        ✏️ Edit Order
                       </Link>{" "}
                       <button
                         onClick={() => {
@@ -71,7 +72,7 @@ function Orders() {
                         }}
                         className="btn btn-danger ms-3"
                       >
-                        Delete Order
+                        🗑 Delete Order
                       </button>
                     </td>
                   </tr>

@@ -4,7 +4,9 @@ import App from './App.jsx'
 import './index.css'
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
+  <div className='bg-black h-[100vh] pt-5 w-full'>
     <App />
-  </StrictMode>,
+
+  </div>
+  
 )

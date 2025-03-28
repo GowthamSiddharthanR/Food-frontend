@@ -28,7 +28,7 @@ function EditOrder() {
       try {
         console.log(values);
       
-        await axios.put(`https://food-backend-taupe.vercel.app/order/${params.id}`, values);
+        await axios.put(`https://test-back-seven.vercel.app/order/${params.id}`, values);
         navigate("/user");
       } catch (error) {
         console.log(error);
@@ -39,7 +39,7 @@ function EditOrder() {
   let getData = async () => {
     try {
       const userResp = await axios.get(
-        `https://food-backend-taupe.vercel.app/order/${params.id}`
+        `https://test-back-seven.vercel.app/order/${params.id}`
       );
       formik.setValues(userResp.data);
     } catch (error) {

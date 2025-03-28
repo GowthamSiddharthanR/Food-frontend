@@ -20,7 +20,7 @@ function Orders() {
   let deleteOrder = async (id) => {
     let yesno = confirm("Are you sure do you want to delete this order?");
     if (yesno) {
-      await axios.delete(`https://food-backend-taupe.vercel.app/order/${id}`);
+      await axios.delete(`https://test-back-seven.vercel.app/order/${id}`);
       getData();
     }
   };

@@ -6,7 +6,7 @@ function Orders() {
   const [users, setUsers] = useState([]);
   let getData = async () => {
     try {
-      const userResp = await axios.get("https://food-backend-taupe.vercel.app/orders");
+      const userResp = await axios.get("https://test-back-seven.vercel.app/orders");
       setUsers(userResp.data);
     } catch (error) {
       console.log(error);

@@ -27,7 +27,7 @@ function CreateOrder() {
         console.log(values);
        
         await axios.post(
-          "https://food-backend-o25i.onrender.com/user",
+          "https://food-backend-taupe.vercel.app/user",
           values,
           
         );

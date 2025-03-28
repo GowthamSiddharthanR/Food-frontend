@@ -6,7 +6,7 @@ function Orders() {
   const [users, setUsers] = useState([]);
   let getData = async () => {
     try {
-      const userResp = await axios.get("https://food-backend-o25i.onrender.com/orders");
+      const userResp = await axios.get("https://food-backend-taupe.vercel.app/orders");
       setUsers(userResp.data);
     } catch (error) {
       console.log(error);
@@ -20,7 +20,7 @@ function Orders() {
   let deleteOrder = async (id) => {
     let yesno = confirm("Are you sure do you want to delete this order?");
     if (yesno) {
-      await axios.delete(`https://food-backend-o25i.onrender.com/order/${id}`);
+      await axios.delete(`https://food-backend-taupe.vercel.app/order/${id}`);
       getData();
     }
   };

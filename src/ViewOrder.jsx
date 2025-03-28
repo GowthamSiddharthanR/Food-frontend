@@ -8,7 +8,7 @@ function ViewOrder() {
   let getData = async () => {
     try {
       const userResp = await axios.get(
-        `https://food-backend-o25i.onrender.com/order/${params.id}`,
+        `https://food-backend-taupe.vercel.app/order/${params.id}`,
        
       );
       setUser(userResp.data);
